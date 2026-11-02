@@ -27,6 +27,8 @@ python tools/verify.py
 | Zdroje | RÚIAN a nejednoznačné názvy; Kramerius v5/v7; IIIF v2/v3; ARES; dědičnost WMS parametrů, osy, formát a rozměry obrázku |
 | Přenos mezi systémy | Čeština na stdout/stderr i při vynuceném ASCII prostředí; sdílené zámky pro POSIX a Windows |
 
+První skutečný běh na Windows odhalil chybu samotného testu načítání HTML: výchozí CP1252 neumělo přečíst správně vytvořený UTF-8 soubor. Test nyní výslovně používá UTF-8; nebyl vypnut ani obejit změnou prostředí. Linux a macOS prošly již v prvním běhu. Aktuální výsledek celé matice je ověřitelný přes výše uvedené Actions.
+
 ## Nezávislé použití a opravy z kontroly
 
 Liebiegové v Liberci: nový agent dostal téma, skill a dostupné zdroje bez předem připravené odpovědi. Prošel založení projektu, validaci a oba čitelné exporty. Kontrola výsledku odhalila dva archivní tipy dostupné pouze ve vyhledávacím indexu; byly přeřazeny na hypotézy a zdroje výslovně označeny. Hotový [liberec-liebieg.json](examples/liberec-liebieg.json) má tři podpořená tvrzení a dvě hypotézy.
