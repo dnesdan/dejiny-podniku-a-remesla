@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "project-pribram-drtikol",
+    "title": "Fotografická živnost Františka Drtikola v Příbrami",
+    "theme": "enterprise",
+    "place": "Příbram, Středočeský kraj",
+    "scope": "Rešeršní ukázka přechodu od kurátorského popisu ke konkrétní archivní citaci. Reprodukce nebyla plně paleograficky přepsána; údaj o období provozu vychází z popisku výstavy.",
+    "research_questions": [
+      "Který konkrétní pramen může doložit ohlášení fotografické živnosti?",
+      "Jak oddělit kurátorský životopis od vlastního čtení zápisu?"
+    ],
+    "created": "2026-11-02"
+  },
+  "entities": [
+    {
+      "id": "drtikol-person",
+      "type": "person",
+      "label": "František Drtikol",
+      "notes": ""
+    },
+    {
+      "id": "pribram-place",
+      "type": "place",
+      "label": "Příbram",
+      "notes": ""
+    },
+    {
+      "id": "drtikol-workshop",
+      "type": "building",
+      "label": "Příbramský fotografický ateliér Františka Drtikola",
+      "notes": "Přesná adresa a geometrie nebyly v této ukázce určeny."
+    },
+    {
+      "id": "photography-craft",
+      "type": "craft",
+      "label": "fotografická živnost",
+      "notes": "Název činnosti podle popisku archivní výstavy; neodvozuje se z něj cechovní členství."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-soapraha-exhibit",
+      "title": "Krok za krokem za našimi (slavnými) předky – Práce šlechtí",
+      "url": "https://soapraha.gov.cz/vystavagenealogie/05_praceslechti/",
+      "publisher": "Státní oblastní archiv v Praze",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "položka 2: záznam o ohlášení fotografické živnosti Františka Drtikola",
+      "notes": "Kurátorský popis uvádí archivní citaci SOkA Příbram, Okresní úřad Příbram, inv. č. 135. Popisek byl čten; není nahrazován předstíraným přepisem rukopisu.",
+      "verification_status": "content_checked"
+    },
+    {
+      "id": "source-drtikol-image",
+      "title": "Reprodukce archiválie k fotografické živnosti Františka Drtikola",
+      "url": "https://soapraha.gov.cz/Pictures/vystava-genealogie/zmensene/05-002.jpg",
+      "publisher": "Státní oblastní archiv v Praze; originál SOkA Příbram",
+      "accessed": "2026-11-02",
+      "kind": "primary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "SOkA Příbram, Okresní úřad Příbram, inv. č. 135; reprodukce 05-002",
+      "notes": "Odkaz otevřen z položky 2 výstavy. Plný čtenářský přepis zápisu zde nebyl proveden; reprodukce není přibalena. Pro číslo folia a přesné znění je třeba dále studovat originál nebo vhodnou reprodukci.",
+      "verification_status": "content_checked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-drtikol-period",
+      "entity_ids": [
+        "drtikol-person",
+        "drtikol-workshop",
+        "pribram-place"
+      ],
+      "text": "Popisek výstavy SOA Praha uvádí provoz Drtikolova příbramského ateliéru v letech 1908–1910.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-soapraha-exhibit",
+          "locator": "položka 2, věta o příbramském ateliéru",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1908,
+        "to": 1910,
+        "precision": "range"
+      }
+    },
+    {
+      "id": "claim-drtikol-record",
+      "entity_ids": [
+        "drtikol-person",
+        "photography-craft"
+      ],
+      "text": "Výstava přiřazuje záznam o ohlášení fotografické živnosti k fondu Okresní úřad Příbram, inv. č. 135, v SOkA Příbram.",
+      "status": "documented",
+      "evidence": [
+        {
+          "source_id": "source-soapraha-exhibit",
+          "locator": "položka 2, popisek a závěrečná archivní citace",
+          "kind": "paraphrase"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "event-drtikol-workshop",
+      "type": "operation",
+      "label": "Doložený interval podle kurátorského popisku",
+      "entity_ids": [
+        "drtikol-person",
+        "drtikol-workshop",
+        "pribram-place"
+      ],
+      "claim_ids": [
+        "claim-drtikol-period"
+      ],
+      "time": {
+        "from": 1908,
+        "to": 1910,
+        "precision": "range"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "link-drtikol-workshop",
+      "from": "drtikol-person",
+      "to": "drtikol-workshop",
+      "relation": "provozoval podle kurátorského popisku",
+      "claim_ids": [
+        "claim-drtikol-period"
+      ],
+      "time": {
+        "from": 1908,
+        "to": 1910,
+        "precision": "range"
+      }
+    }
+  ],
+  "research_log": [
+    {
+      "date": "2026-11-02",
+      "source_id": "source-soapraha-exhibit",
+      "query": "SOA Praha práce šlechtí živnostenské rejstříky Drtikol",
+      "result": "Otevřen kurátorský popis a konkrétní archivní citace položky 2.",
+      "limitations": "Záznam přístupný přes výstavu, nikoli celý živnostenský rejstřík."
+    },
+    {
+      "date": "2026-11-02",
+      "source_id": "source-drtikol-image",
+      "query": "Odkaz Velký obrázek u položky 2",
+      "result": "Otevřen odkaz na reprodukci 05-002.jpg.",
+      "limitations": "Neproveden plný přepis ani ověření všech rukopisných údajů; obraz není zahrnut do distribuovaných souborů."
+    }
+  ],
+  "open_questions": [
+    "Přečíst reprodukci zápisu v dostatečném rozlišení a přesně určit datum ohlášení; nepřevádět interval provozu na datum registrace.",
+    "Dohledat adresu ateliéru v dobovém adresáři nebo příslušném spise.",
+    "Případný přesun do Prahy doložit samostatnými prameny a samostatnou provozovnou."
+  ]
+}

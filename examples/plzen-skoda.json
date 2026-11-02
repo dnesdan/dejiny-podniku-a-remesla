@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "project-plzen-skoda",
+    "title": "Waldsteinova strojírna a Emil Škoda: tři různé mezníky",
+    "theme": "enterprise",
+    "place": "Plzeň, Plzeňský kraj",
+    "scope": "Počátky plzeňské strojírny 1859–1869. Omezená rešerše dvou veřejných historických přehledů; původní kupní smlouva ani dobový rejstřík nebyly studovány.",
+    "research_questions": [
+      "Který rok označuje vznik strojírny a který změnu vlastníka?",
+      "Jak odlišit technickou funkci Emila Škody od pozdější koupě?"
+    ],
+    "created": "2026-11-02"
+  },
+  "entities": [
+    {
+      "id": "plzen-place",
+      "type": "place",
+      "label": "Plzeň",
+      "notes": ""
+    },
+    {
+      "id": "plzen-works",
+      "type": "organization",
+      "label": "Waldsteinova strojírna v Plzni",
+      "notes": "Historický podnik; změnu vlastníka zachycuje vztah, nikoli přiřazení současného IČO."
+    },
+    {
+      "id": "plzen-site",
+      "type": "building",
+      "label": "Areál plzeňské strojírny",
+      "notes": "Geometrie a identita jednotlivých budov nebyly v této ukázce určeny."
+    },
+    {
+      "id": "emil-skoda",
+      "type": "person",
+      "label": "Emil Škoda",
+      "notes": "Historická veřejná osobnost; doložené role hlavní inženýr a kupující jsou oddělené."
+    },
+    {
+      "id": "skoda-brand",
+      "type": "brand",
+      "label": "Škoda",
+      "notes": "Samostatná entita značky. Ukázka nedokazuje její právní stav ani vztah ke každé dnešní společnosti tohoto názvu."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-plzen-history",
+      "title": "Po stopách historie města",
+      "url": "https://plzen.eu/o-meste/historie/po-stopach-historie/",
+      "publisher": "Statutární město Plzeň",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "chronologický přehled, položka 1859",
+      "notes": "Městský retrospektivní přehled; dvě tvrzení v položce 1859 odlišují založení a koupi.",
+      "verification_status": "content_checked"
+    },
+    {
+      "id": "source-skoda-history",
+      "title": "Historie",
+      "url": "https://www.skodagroup.com/cs/stranka/historie",
+      "publisher": "Škoda Group",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "úvodní historický odstavec: 1859, 1866, 1869",
+      "notes": "Firemní retrospektivní přehled. Původní smlouvy a personální dokumenty tím nejsou nahrazeny; nezávislost podkladů od městské chronologie není zjištěna.",
+      "verification_status": "content_checked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-plzen-1859",
+      "entity_ids": [
+        "plzen-works",
+        "plzen-site"
+      ],
+      "text": "Městský i podnikový historický přehled uvádějí vznik Waldsteinovy strojírny v Plzni v roce 1859.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-plzen-history",
+          "locator": "chronologie, položka 1859",
+          "kind": "paraphrase"
+        },
+        {
+          "source_id": "source-skoda-history",
+          "locator": "první historický odstavec, věta k roku 1859",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1859,
+        "to": 1859,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "claim-skoda-1866",
+      "entity_ids": [
+        "emil-skoda",
+        "plzen-works"
+      ],
+      "text": "Podnikový přehled uvádí nástup Emila Škody do funkce hlavního inženýra v roce 1866.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-skoda-history",
+          "locator": "první historický odstavec, údaj o nástupu roku 1866",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1866,
+        "to": 1866,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "claim-skoda-1869",
+      "entity_ids": [
+        "emil-skoda",
+        "plzen-works"
+      ],
+      "text": "Městský i podnikový přehled datují koupi strojírny Emilem Škodou do roku 1869.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-plzen-history",
+          "locator": "chronologie, položka 1859 s údajem o koupi 1869",
+          "kind": "paraphrase"
+        },
+        {
+          "source_id": "source-skoda-history",
+          "locator": "první historický odstavec, údaj o koupi roku 1869",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1869,
+        "to": 1869,
+        "precision": "year"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event-plzen-foundation",
+      "type": "foundation",
+      "label": "Založení strojírny podle historických přehledů",
+      "entity_ids": [
+        "plzen-works",
+        "plzen-site"
+      ],
+      "claim_ids": [
+        "claim-plzen-1859"
+      ],
+      "time": {
+        "from": 1859,
+        "to": 1859,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "event-skoda-engineer",
+      "type": "employment",
+      "label": "Emil Škoda hlavním inženýrem podle podnikového přehledu",
+      "entity_ids": [
+        "emil-skoda",
+        "plzen-works"
+      ],
+      "claim_ids": [
+        "claim-skoda-1866"
+      ],
+      "time": {
+        "from": 1866,
+        "to": 1866,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "event-skoda-purchase",
+      "type": "purchase",
+      "label": "Koupě strojírny podle historických přehledů",
+      "entity_ids": [
+        "emil-skoda",
+        "plzen-works"
+      ],
+      "claim_ids": [
+        "claim-skoda-1869"
+      ],
+      "time": {
+        "from": 1869,
+        "to": 1869,
+        "precision": "year"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "link-skoda-engineer",
+      "from": "emil-skoda",
+      "to": "plzen-works",
+      "relation": "nastoupil jako hlavní inženýr podle podnikového přehledu",
+      "claim_ids": [
+        "claim-skoda-1866"
+      ],
+      "time": {
+        "from": 1866,
+        "to": 1866,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "link-skoda-purchase",
+      "from": "emil-skoda",
+      "to": "plzen-works",
+      "relation": "koupil podle retrospektivních přehledů",
+      "claim_ids": [
+        "claim-skoda-1869"
+      ],
+      "time": {
+        "from": 1869,
+        "to": 1869,
+        "precision": "year"
+      }
+    }
+  ],
+  "research_log": [
+    {
+      "date": "2026-11-02",
+      "source_id": "source-plzen-history",
+      "query": "site:plzen.eu Škoda 1859 1869",
+      "result": "Otevřen městský chronologický přehled; nalezena položka 1859.",
+      "limitations": "Městská chronologie není obraz původní kupní smlouvy."
+    },
+    {
+      "date": "2026-11-02",
+      "source_id": "source-skoda-history",
+      "query": "site:skodagroup.com historie 1859 1866 1869",
+      "result": "Otevřena česká stránka Historie; rozlišeny tři mezníky.",
+      "limitations": "Firemní retrospektiva; nezjištěno, zda oba přehledy vycházejí ze stejné literatury."
+    }
+  ],
+  "open_questions": [
+    "Dohledat kupní smlouvu nebo odpovídající archivní záznam a ověřit přesný den a rozsah převodu.",
+    "Identifikovat konkrétní historické budovy a parcely nezávisle na dnešním areálu.",
+    "Neztotožňovat plzeňský podnik s mladoboleslavskou automobilkou ani se všemi dnešními subjekty nesoucími značku Škoda.",
+    "Prověřit podklady obou přehledů, než je budeme počítat za nezávislá svědectví."
+  ]
+}

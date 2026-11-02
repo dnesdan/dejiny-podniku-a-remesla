@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dějiny podniku a řemesla"
+  short_description: "Historie českých firem, provozů a řemesel"
+  default_prompt: "Použij $dejiny-podniku-a-remesla k výzkumu historie vybraného podniku nebo řemesla v ČR."

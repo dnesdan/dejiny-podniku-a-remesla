@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "project-cz-ub",
+    "title": "Počátky závodu České zbrojovky v Uherském Brodě",
+    "theme": "enterprise",
+    "place": "Uherský Brod, Zlínský kraj",
+    "scope": "Malá skutečná rešerše počátků závodu v roce 1936 z veřejných podnikových retrospektiv; právní kontinuita dnešních společností se neprokazuje.",
+    "research_questions": [
+      "Co dokládají veřejné podnikové přehledy o vzniku závodu?",
+      "Jaký byl vztah nového závodu ke Strakonicím?"
+    ],
+    "created": "2026-11-02"
+  },
+  "entities": [
+    {
+      "id": "cz-ub-place",
+      "type": "place",
+      "label": "Uherský Brod",
+      "notes": ""
+    },
+    {
+      "id": "cz-ub-site",
+      "type": "building",
+      "label": "Zbrojní závod v Uherském Brodě",
+      "notes": "Historický areál; přesná hranice a geometrie nebyly v této ukázce ověřeny."
+    },
+    {
+      "id": "cz-ub-branch",
+      "type": "organization",
+      "label": "Pobočný závod v Uherském Brodě, 1936",
+      "notes": "Historická provozní jednotka; není automaticky totožná s dnešní právnickou osobou."
+    },
+    {
+      "id": "cz-strakonice-company",
+      "type": "organization",
+      "label": "Česká zbrojovka, akciová společnost v Praze, hlavní závod ve Strakonicích",
+      "notes": "Dobové označení podle ročenky 2019; současná IČO nejsou doplněna."
+    },
+    {
+      "id": "cz-brand",
+      "type": "brand",
+      "label": "CZ",
+      "notes": "Značka je oddělena od historické organizační jednotky. Tato ukázka neurčuje datum registrace ochranné známky."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-cz-2019",
+      "title": "CZ Yearbook 2019 /cz – Historické milníky CZ",
+      "url": "https://katalogy.czub.cz/rocenka-cz-2019-cz/94-95/",
+      "publisher": "Česká zbrojovka",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "s. 94–95, oddíl 1936",
+      "notes": "Retrospektivní firemní ročenka. Čten veřejný text připojený k dvojstraně; nepředstírá se kontrola původního stavebního či rejstříkového spisu.",
+      "verification_status": "content_checked"
+    },
+    {
+      "id": "source-cz-2021",
+      "title": "85th anniversary of CZ, 28. 7. 2021",
+      "url": "https://www.czfirearms.com/news/85-let-ceske-zbrojovky-uhersky-brod",
+      "publisher": "Česká zbrojovka",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "unknown; citace a vlastní shrnutí, reprodukce nepřibaleny",
+      "locator": "úvod a oddíl Ceska zbrojovka is founded in Uhersky Brod and contributes to the war effort (1936–1945)",
+      "notes": "Retrospektivní firemní text. Stejný institucionální původ jako ročenka; nepočítat jako nezávislé archivní potvrzení.",
+      "verification_status": "content_checked"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-cz-founded",
+      "entity_ids": [
+        "cz-ub-site",
+        "cz-ub-branch"
+      ],
+      "text": "Podnikové retrospektivy datují vybudování uherskobrodského závodu do roku 1936.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-cz-2019",
+          "locator": "s. 94–95, milník 1936",
+          "kind": "paraphrase"
+        },
+        {
+          "source_id": "source-cz-2021",
+          "locator": "oddíl k období 1936–1945, první odstavec",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1936,
+        "to": 1936,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "claim-cz-branch",
+      "entity_ids": [
+        "cz-ub-branch",
+        "cz-strakonice-company"
+      ],
+      "text": "Ročenka popisuje nový závod jako pobočku České zbrojovky, akciové společnosti v Praze, s hlavním závodem ve Strakonicích.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-cz-2019",
+          "locator": "s. 94–95, odstavec milníku 1936",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1936,
+        "to": 1936,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "claim-cz-start",
+      "entity_ids": [
+        "cz-ub-site"
+      ],
+      "text": "Jubilejní text uvádí zahájení výstavby uprostřed léta 1936; přesný den zde není doložen.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "source-cz-2021",
+          "locator": "úvod článku, první odstavec",
+          "kind": "paraphrase"
+        }
+      ],
+      "time": {
+        "from": 1936,
+        "to": 1936,
+        "precision": "year"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event-cz-construction",
+      "type": "construction",
+      "label": "Výstavba závodu podle podnikových retrospektiv",
+      "entity_ids": [
+        "cz-ub-site",
+        "cz-ub-branch"
+      ],
+      "claim_ids": [
+        "claim-cz-founded",
+        "claim-cz-start"
+      ],
+      "time": {
+        "from": 1936,
+        "to": 1936,
+        "precision": "year"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "link-cz-branch",
+      "from": "cz-ub-branch",
+      "to": "cz-strakonice-company",
+      "relation": "pobočný závod podle ročenky",
+      "claim_ids": [
+        "claim-cz-branch"
+      ],
+      "time": {
+        "from": 1936,
+        "to": 1936,
+        "precision": "year"
+      }
+    }
+  ],
+  "research_log": [
+    {
+      "date": "2026-11-02",
+      "source_id": "source-cz-2019",
+      "query": "CZ Yearbook 2019 Historické milníky 1936",
+      "result": "Otevřena veřejná textová stránka dvojstrany 94–95.",
+      "limitations": "Neproveden úplný přepis originálního archivního dokumentu; jde o firemní retrospektivu."
+    },
+    {
+      "date": "2026-11-02",
+      "source_id": "source-cz-2021",
+      "query": "Česká zbrojovka 85th anniversary 1936 branch",
+      "result": "Otevřen text vydaný 28. 7. 2021; zaznamenán údaj o výstavbě.",
+      "limitations": "Firemní zdroje stejného původu; další nezávislé potvrzení se teprve hledá."
+    }
+  ],
+  "open_questions": [
+    "Dohledat v příslušném městském či okresním fondu stavební řízení a zápis k pozemkům; signatura zatím nebyla zjištěna.",
+    "Ověřit přesné datum zahájení výroby z dobového záznamu a odlišit jej od výstavby.",
+    "Právní a organizační proměny po roce 1936 řešit zvlášť podle rejstříků a listin.",
+    "Neodvozovat nepřetržitou právní existenci dnešní společnosti z marketingové tradice nebo zachovaného areálu."
+  ]
+}

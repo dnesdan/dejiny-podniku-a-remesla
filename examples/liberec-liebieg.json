@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "id": "liebieg-liberec-start",
+    "title": "Počátky textilního podnikání Liebiegů v Liberci",
+    "theme": "enterprise",
+    "place": "Liberec (dobově Reichenberg)",
+    "scope": "Krátká orientační rešerše k počátkům podnikání, přibližně 1822–1828; stav zpracování 2. listopadu 2026. Závěr z otevřeného městského přehledu: obchodní oprávnění, počátek výroby v nájmu a koupě existujícího areálu jsou tři různé události. Přímo přečten byl jeden retrospektivní městský článek. Dva archivní průvodce byly nalezeny pouze prostřednictvím vyhledávacího indexu; jejich stránky ani inventáře nebyly prohlédnuty. Konkrétní fondové údaje jsou proto neověřené hypotézy pro další hledání. Původní licenci, kupní smlouvu ani inventář jednotlivých spisů se v tomto kole nepodařilo přečíst. Nejde o úplnou historii ani o důkaz právního nástupnictví.",
+    "research_questions": [
+      "Co lze zatím říci o obchodních začátcích, výrobě v pronajatých prostorách a koupi areálu roku 1828?",
+      "Jak oddělit osoby, obchodní označení, výrobnu a budoucí rozsáhlý tovární areál?",
+      "Ve kterých fondech a u kterých archivních institucí začít s původními podnikovými a živnostenskými dokumenty?"
+    ],
+    "created": "2026-11-02"
+  },
+  "entities": [
+    {
+      "id": "person-johann",
+      "type": "person",
+      "label": "Johann Liebieg – podnikatel počátečního období",
+      "sensitive": false,
+      "notes": "Použito pouze veřejné historické jméno a role z C1; bez soukromých údajů a bez spojování s pozdějšími stejnojmennými členy rodu."
+    },
+    {
+      "id": "person-franz",
+      "type": "person",
+      "label": "Franz Liebieg – Johannův bratr a obchodní společník",
+      "sensitive": false,
+      "notes": "Role společného obchodování v C1. Pozdější samostatné podniky Franze nejsou v tomto dossieru slučovány s podnikem Johanna."
+    },
+    {
+      "id": "org-gebrueder",
+      "type": "organization",
+      "label": "Gebrüder Liebieg – obchodní podnik bratří",
+      "notes": "Název převzatý z retrospektivy S1, C1. Dobová právní forma ani registrační listina nejsou ověřeny. Nemá přiřazeno dnešní IČO."
+    },
+    {
+      "id": "org-johann",
+      "type": "organization",
+      "label": "Jan Liebieg a spol. Liberec – kandidátní podnikové označení z indexu",
+      "notes": "Pracovní kandidátní entita podle nepřímo nalezeného názvu fondu S2, hypotéza C4. Archivní průvodce nebyl prohlédnut. Totožnost či právní návaznost na Gebrüder Liebieg není prokázána. Není sloučena s pozdější Textilanou."
+    },
+    {
+      "id": "building-rented",
+      "type": "building",
+      "label": "Výrobna v nájmu ve Vídeňské, dnešní Moskevské ulici – dům neurčen",
+      "notes": "C2. Číslo popisné, parcela, pronajímatel a termín nájmu nebyly zjištěny. Bez souřadnic."
+    },
+    {
+      "id": "building-manufactory",
+      "type": "building",
+      "label": "Bývalá clam-gallasovská manufaktura v Josefínině údolí – koupený areál",
+      "notes": "C3. Pracovní karta pro soubor budov/pozemků; rok koupě není datem vzniku všech staveb. Přesné parcely, převodce, kupující podle smlouvy a právní rozsah převodu zůstávají neověřeny."
+    },
+    {
+      "id": "org-chamber",
+      "type": "organization",
+      "label": "Obchodní a živnostenská komora Liberec – kandidátní původce fondu",
+      "notes": "Hypotéza C5 podle vyhledávacího indexu. Přesný fond a jeho uložení nejsou ověřeny v prohlédnutém archivním průvodci či inventáři. Fond by ani po ověření sám nedokládal podnikové oprávnění z roku 1822."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Velkoprůmyslníci Liebiegové (19. 5. 2021)",
+      "url": "https://www.visitliberec.eu/osobnosti/velkoprumyslnici-liebiegove/",
+      "publisher": "Visit Liberec – oficiální turistický průvodce města Liberec",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "open",
+      "license": "Licence textu ani fotografií pro další užití nebyla ověřena; přebrány jen stručné vlastní parafráze a odkaz.",
+      "locator": "Oddíl Kdo byl Johann Liebieg?, odstavce začínající Roku 1822 obdrželi bratři a S výrobou začali.",
+      "notes": "Webový text skutečně otevřen a přečten v relevantních odstavcích. Jde o institucionální retrospektivu, ne originál licence či smlouvy. Obsah dalších biografických pasáží nebyl převzat.",
+      "verification_status": "content_checked"
+    },
+    {
+      "id": "S2",
+      "title": "Kandidát: Státní okresní archiv Liberec – archivní průvodce (pouze vyhledávací index)",
+      "url": "https://www.portafontium.eu/node/90010124",
+      "publisher": "Porta fontium – institucionální archivní průvodce, heslo SOkA Liberec",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "metadata",
+      "license": "Práva k dalšímu užití nebyla ověřena; uvedeny bibliografické údaje, názvy fondů, stručná parafráze a odkaz.",
+      "locator": "Kandidátní umístění podle vyhledávacího indexu; nepřečteno v původní stránce: Výběr nejdůležitějších fondů: 2. Instituce samosprávné / Městské archivy; 5. Hospodářské instituce / Podniky; 6. Jiné / Osobní pozůstalosti a rodinné archivy.",
+      "notes": "Tento záznam zachycuje pouze nepřímý úryvek z vyhledávacího indexu, proto má kind secondary. Odkazovaný archivní průvodce nebyl prohlédnut: přímé otevření skončilo timeoutem/502. Přesné fondové názvy, rozsahy, uložení, pomůcky a přístupnost jsou kandidátní údaje k ověření. Žádný inventář ani spis nebyl přečten.",
+      "verification_status": "search_index_only"
+    },
+    {
+      "id": "S3",
+      "title": "Kandidát: Státní oblastní archiv v Litoměřicích – archivní průvodce (pouze vyhledávací index)",
+      "url": "https://www.portafontium.eu/cbguide/soalt?language=cs",
+      "publisher": "Porta fontium – institucionální archivní průvodce, heslo SOA Litoměřice",
+      "accessed": "2026-11-02",
+      "kind": "secondary",
+      "access": "metadata",
+      "license": "Práva k dalšímu užití nebyla ověřena; uvedeny bibliografické údaje, název fondu, stručná parafráze a odkaz.",
+      "locator": "Kandidátní umístění podle vyhledávacího indexu; nepřečteno v původní stránce: 5. Hospodářské instituce / Obchodní a živnostenské komory.",
+      "notes": "Tento záznam zachycuje pouze nepřímý úryvek z vyhledávacího indexu, proto má kind secondary. Odkazovaný archivní průvodce nebyl prohlédnut: přímé otevření skončilo 502. Přiřazení fondu komory na oblastní úroveň, přesný název, rozsah, depozitář, inventář i konkrétní spisy vyžadují ověření.",
+      "verification_status": "search_index_only"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "entity_ids": [
+        "person-johann",
+        "person-franz",
+        "org-gebrueder"
+      ],
+      "text": "Městský přehled klade licenci bratří Johanna a Franze Liebiegových pro obchod se střižním zbožím a vznik obchodu Gebrüder Liebieg do roku 1822. Tento údaj se týká obchodu; sám neurčuje první den vlastní textilní výroby. Originál licence nebyl přečten.",
+      "status": "supported",
+      "time": {
+        "from": 1822,
+        "to": 1822,
+        "precision": "year"
+      },
+      "evidence": [
+        {
+          "source_id": "S1",
+          "locator": "Oddíl Kdo byl Johann Liebieg?, odstavec Roku 1822 obdrželi bratři; v otevřeném webovém přepisu ř. 18.",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "entity_ids": [
+        "org-gebrueder",
+        "building-rented"
+      ],
+      "text": "Tentýž přehled popisuje začátek výroby v pronajatém lokálu ve Vídeňské, dnešní Moskevské ulici, před koupí továrního areálu v roce 1828. Přesný rok zahájení, dům a vybavení výrobny zde nejsou doloženy dobovým záznamem; nepřiděluji jim uměle přesné datum.",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "S1",
+          "locator": "Oddíl Kdo byl Johann Liebieg?, odstavec S výrobou začali; v otevřeném webovém přepisu ř. 19.",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "entity_ids": [
+        "org-gebrueder",
+        "building-manufactory"
+      ],
+      "text": "Rok 1828 je v městském přehledu spojen s koupí bývalé clam-gallasovské manufaktury v Josefínině údolí. Z toho plyne rozlišení již existujícího areálu a rozvíjejícího se Liebiegova podnikání; koupě nedokládá založení všech budov ani jejich tehdejší stavební podobu. Přesný převod a kupující musí určit smlouva.",
+      "status": "supported",
+      "time": {
+        "from": 1828,
+        "to": 1828,
+        "precision": "year"
+      },
+      "evidence": [
+        {
+          "source_id": "S1",
+          "locator": "Oddíl Kdo byl Johann Liebieg?, odstavec S výrobou začali, věty o koupi roku 1828; otevřený přepis ř. 19.",
+          "kind": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "entity_ids": [
+        "org-johann",
+        "person-johann",
+        "person-franz"
+      ],
+      "text": "Neověřený tip z vyhledávacího indexu: u SOkA Liberec by měly být fondy Jan Liebieg a spol. Liberec 1799–1946 (1956), Rodinný archiv Liebiegů 1821–1944 a Archiv města Liberec 1537–1945 (1956). Archivní průvodce ani inventáře nebyly přímo prohlédnuty, takže přesné názvy, rozsahy a uložení zatím nepovažuji za ověřené. Uvedený rozsah podnikového fondu by ani po ověření nedokládal založení firmy roku 1799 nebo dochování licence z roku 1822.",
+      "status": "hypothesis",
+      "evidence": [
+        {
+          "source_id": "S2",
+          "locator": "Pouze návrh lokátoru z vyhledávacího indexu, neověřený v otevřeném prameni: 5. Hospodářské instituce / Podniky, položka Jan Liebieg a spol. Liberec; 6. Jiné / Osobní pozůstalosti a rodinné archivy; 2. Instituce samosprávné / Městské archivy. Přečten indexovaný text, nikoli celý inventář.",
+          "kind": "context"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "entity_ids": [
+        "org-chamber"
+      ],
+      "text": "Neověřený tip z vyhledávacího indexu: průvodce SOA Litoměřice by měl uvádět fond Obchodní a živnostenská komora Liberec s rozsahem (1841) 1851–1949. Přímo prohlédnutý pramen pro toto přiřazení v dossieru chybí; název, rozsah i uložení je nutné teprve ověřit. Jde o kandidáta k pozdější úřední evidenci, nikoli o dohledaný soudobý doklad licence z roku 1822.",
+      "status": "hypothesis",
+      "evidence": [
+        {
+          "source_id": "S3",
+          "locator": "Pouze návrh lokátoru z vyhledávacího indexu, neověřený v otevřeném prameni: 5. Hospodářské instituce / Obchodní a živnostenské komory, položka Obchodní a živnostenská komora Liberec (1841) 1851–1949; přečten indexovaný text.",
+          "kind": "context"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "E1822",
+      "type": "trade-permission-reported",
+      "label": "Uváděné obchodní oprávnění a obchod Gebrüder Liebieg",
+      "entity_ids": [
+        "org-gebrueder",
+        "person-johann",
+        "person-franz"
+      ],
+      "claim_ids": [
+        "C1"
+      ],
+      "time": {
+        "from": 1822,
+        "to": 1822,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "E1828",
+      "type": "property-acquisition-reported",
+      "label": "Uváděná koupě již existující manufaktury; výroba v nájmu jí podle přehledu předcházela",
+      "entity_ids": [
+        "org-gebrueder",
+        "building-manufactory"
+      ],
+      "claim_ids": [
+        "C2",
+        "C3"
+      ],
+      "time": {
+        "from": 1828,
+        "to": 1828,
+        "precision": "year"
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "L1",
+      "from": "person-johann",
+      "to": "org-gebrueder",
+      "relation": "uváděn jako zakladatel/společník obchodu",
+      "claim_ids": [
+        "C1"
+      ],
+      "time": {
+        "from": 1822,
+        "to": 1822,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "L2",
+      "from": "person-franz",
+      "to": "org-gebrueder",
+      "relation": "uváděn jako zakladatel/společník obchodu",
+      "claim_ids": [
+        "C1"
+      ],
+      "time": {
+        "from": 1822,
+        "to": 1822,
+        "precision": "year"
+      }
+    },
+    {
+      "id": "L3",
+      "from": "org-gebrueder",
+      "to": "building-rented",
+      "relation": "výroba v pronajatých prostorách podle retrospektivy",
+      "claim_ids": [
+        "C2"
+      ]
+    },
+    {
+      "id": "L4",
+      "from": "org-gebrueder",
+      "to": "building-manufactory",
+      "relation": "uváděná koupě areálu; právní rozsah převodu neověřen",
+      "claim_ids": [
+        "C3"
+      ],
+      "time": {
+        "from": 1828,
+        "to": 1828,
+        "precision": "year"
+      }
+    }
+  ],
+  "research_log": [
+    {
+      "date": "2026-11-02",
+      "query": "Lokální postup: přečten SKILL.md, AGENTS.md, metodika, prameny, regiony, řemesla a dotazy, výstupy a kontrola, schema a šablona.",
+      "source_id": "S1",
+      "result": "Použita pravidla oddělení subjektů, budov, dobové listiny a retrospektivy.",
+      "limitations": "Repo ani skill nebyly tímto badatelským průchodem upraveny."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "badatel.py init; sources --theme enterprise; plan --place Liberec --region Liberecký kraj --topic textilnictví --theme enterprise --name Liebieg --from-year 1818 --to-year 1835.",
+      "source_id": "S1",
+      "result": "Založen nový dossier; CLI vytvořilo seznam zdrojů a plán dotazů.",
+      "limitations": "Plan byl označen plan_only; návrhy v plánu nejsou provedené vyhledávání. Rozsáhlý seznam obsahoval i zdroje, které pro tuto malou úlohu nebyly použity."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Webové dotazy: Liebieg 1828 1822 Liberec site:muzeumlb.cz; Liebieg a spol Liberec archiv fond; Liebieg továrna 1828 site:pamatkovykatalog.cz.",
+      "source_id": "S1",
+      "result": "Nalezeny institucionální a doplňkové kandidáty. Muzeum Libea, Historie tisku vlajek v Liberci, bylo otevřeno; pro malý výsledný soupis není využito jako čtvrtý důkaz.",
+      "limitations": "Jde o orientační hledání, ne systematický průchod dobového tisku."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Webové dotazy: site:soalitomerice.cz Liebieg; site:liberec.cz Liebieg 1822 1828; site:muzeumlb.cz Liebieg výroba 1828; Liebieg 1822 site:visitliberec.eu; Liebieg 1828 site:npu.cz.",
+      "source_id": "S1",
+      "result": "Nalezen a otevřen městský článek S1. Nalezen kandidát NPÚ Technické památky v Norsku a České republice: https://www.npu.cz/publikace/technicke-pamatky-v-norsku-a-ceske-republice.pdf.",
+      "limitations": "NPÚ PDF nebylo přečteno: webový nástroj oznámil překročení velikosti 19 374 600 bajtů. Žádné tvrzení z něj nebylo převzato."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Webové dotazy: Jan Liebieg a spol. archiv inventář; Liebieg inventář Liberec 1963.",
+      "source_id": "S2",
+      "result": "Nalezen neotevřený kandidát na inventář: V. Ruda, Jan Liebieg a spol. Liberec 1799–1946, 1963, evidenční číslo pomůcky 133; bibliografická stopa v https://kniholib.cz/arl-li/cs/csg/?key=86875477018&repo=lirepo.",
+      "limitations": "Otevření knihovního PDF vrátilo 404. Údaj o pomůcce je ponechán pouze jako kandidát k ověření, nikoli jako signatura archiválie nebo důkaz přečtení inventáře."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Otevření https://www.portafontium.eu/node/90010124 a variant /cbguide/soalt-lb?language=cs a ?language=de.",
+      "source_id": "S2",
+      "result": "Vyhledávací index vrátil úryvky s kandidátními názvy a rozsahy fondů. Přečteny byly jen tyto úryvky; nejsou prohlédnutým archivním průvodcem ani ověřeným inventářem.",
+      "limitations": "Přímé otevření skončilo jednou timeoutem a poté 502. Nebyl přečten celý webový průvodce ani inventář."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Jediný přímý požadavek přes přibalený HttpClient: https://www.portafontium.eu/node/90010124.",
+      "source_id": "S2",
+      "result": "Klient byl skutečně spuštěn s výchozí sdílenou cache a časovým limitem.",
+      "limitations": "FetchError: Request failed ... <urlopen error [Errno 1] Operation not permitted>. Síťové oprávnění nebylo obcházeno; žádný úspěšně stažený archivní obsah."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Otevření https://www.soalitomerice.cz/soka-liberec/ a následování oficiálního odkazu E-study room.",
+      "source_id": "S2",
+      "result": "Stránka přesměrovala na aktuální rozcestník SOA, který odkazuje na https://digi.soalitomerice.cz/digitalnibadatelna/.",
+      "limitations": "Badatelna přesměrovala na /human/challenge s ověřením člověka. Další automatické kroky neproběhly; nebylo přihlášení ani pokus obejít ochranu."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Webový dotaz: \"Jan Liebieg a spol. Liberec\" site:digi.soalitomerice.cz.",
+      "source_id": "S2",
+      "result": "Vyhledávač nevrátil žádný výsledek.",
+      "limitations": "Nulový výsledek v tomto webovém indexu neprokazuje neexistenci fondu ani nedigitalizování konkrétní archiválie."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Webové dotazy: site:portafontium.eu/node/90010124 \"Obchodní\"; site:portafontium.eu/node/90010124 \"Archiv města Liberec\"; site:portafontium.eu/cbguide/soalt \"Obchodní a živnostenská komora Liberec\"; site:portafontium.eu/cbguide/soalt \"Krajský soud\" \"Liberec\".",
+      "source_id": "S3",
+      "result": "Index nabídl kandidátní údaje naznačující rozdělení podnikových a městských fondů versus komory. Přiřazení institucím, názvy a rozsahy vyžadují ověření v přímo prohlédnutém prameni.",
+      "limitations": "Přímé otevření S3 vrátilo 502. Vyhledávač nabízel také test3.portafontium.eu; na testovacím hostu nebylo pokračováno. Aktuální fyzické uložení a přístupnost neověřeny."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "zdroje.py --help.",
+      "source_id": "S1",
+      "result": "Přečten skutečný seznam adaptérů: registry, ruian, kramerius-search, wms, wms-map, iiif, ares.",
+      "limitations": "Žádný adaptér neslibuje automatické čtení libereckého podnikového inventáře. Živý dotaz do Krameria nebyl proveden, protože tento malý dossier se o něj neopírá."
+    },
+    {
+      "date": "2026-11-02",
+      "query": "Důkazní revize výstupů po kontrole skutečné dostupnosti pramenů.",
+      "source_id": "S2",
+      "result": "C4 a C5 změněny ze supported na hypothesis; přidáno výslovné omezení pouze z vyhledávacího indexu. S2 a S3 zachycují nepřímé úryvky jako secondary. Upraven úvod, navazující kandidátní entity, otevřené otázky a formulace deníku.",
+      "limitations": "C1–C3, S1, časová osa a vztahy zůstaly beze změny. Revize nepřinesla nový archivní doklad; výstupy netvrdí přímé prohlédnutí archivních průvodců."
+    }
+  ],
+  "open_questions": [
+    "1. Podnikové začátky: u SOkA Liberec nejdříve ověřit kandidátní údaje z indexu pro fondy Jan Liebieg a spol. Liberec a Rodinný archiv Liebiegů: existenci, přesný název, časový rozsah a současné uložení. Po otevření příslušných inventářů hledat pro období 1822–1831 jména Gebrüder Liebieg, Johann/Jan a Franz Liebieg, společenské smlouvy, první výrobní účty, korespondenci a nájmy. Cílem je první přímo doložená výroba a vztah obchodních označení. Jde o neověřené fondové tipy; konkrétní signatura, karton a folio zatím neznámé.",
+    "2. Oprávnění: nejprve ověřit kandidátní fond Archiv města Liberec v aktuálním archivním průvodci a inventáři. Poté pro roky 1821–1823 prověřit jmenné a věcné rejstříky, hesla Liebieg, Handel/Handlung, Gewerbe, Konzession a Tuch. Zjistit vydávající úřad, datum, držitele a rozsah licence; nepředpokládat signaturu ani dochování. Pro pozdější evidenci zvlášť ověřit tip z indexu na fond liberecké obchodní a živnostenské komory při SOA Litoměřice. Ani toto uložení zatím nebylo potvrzeno prohlédnutým pramenem.",
+    "3. Budovy: v podnikových, městských a podle výsledku rejstříků pozemkových či vrchnostenských písemnostech dohledat kupní smlouvu z roku 1828 a soupis převáděných nemovitostí. Odděleně hledat nájem výrobny v Moskevské ulici. Teprve podle čísla domu/parcely propojit doklady se starou katastrální mapou a stavebními spisy; datum koupě nenahrazovat datem stavby. U každého originálu zapsat fond, inventární číslo/signaturu, karton/knihu, folio/snímek a dostupnost. Žádný dotaz archivu nebyl odeslán."
+  ]
+}
